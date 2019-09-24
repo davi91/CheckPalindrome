@@ -25,7 +25,7 @@ public class CheckPalindrome extends Application {
 		
 		comprobarBt = new Button("Comprobar");
 		comprobarBt.setDefaultButton(true);
-		comprobarBt.setOnAction(evt -> comprobarPalindromo(evt));
+		comprobarBt.setOnAction(evt -> onComprobarBt(evt));
 		
 		palindromeLabel = new Label();
 		
@@ -42,7 +42,7 @@ public class CheckPalindrome extends Application {
 
 	}
 
-	private void comprobarPalindromo( ActionEvent evt ) {
+	private void onComprobarBt( ActionEvent evt ) {
 	
 		if( isPalindrome(sentenceTxt.getText()) ) {
 			
